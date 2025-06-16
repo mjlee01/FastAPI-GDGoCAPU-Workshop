@@ -1,0 +1,25 @@
+meta {
+  name: update_transaction
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/transaction/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 6
+}
+
+body:json {
+  {
+    "type": "expense",
+    "amount": 50.00,
+    "description": "Freelance Project Payment",
+    "category": "Freelance",
+    "account": "TNG"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: update_order_status
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/staff/update-order-status
+  body: json
+  auth: inherit
+}
+
+headers {
+  staff-name: Sharky
+}
+
+body:json {
+  {
+    "id": "e8e9e6f1-4fd1-418a-99f1-229a218e4924",
+    "status": "done"
+  }
+}

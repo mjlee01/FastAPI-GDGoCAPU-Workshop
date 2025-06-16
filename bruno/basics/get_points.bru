@@ -1,0 +1,19 @@
+meta {
+  name: get_points
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/points/:name?points=888
+  body: none
+  auth: inherit
+}
+
+params:query {
+  points: 888
+}
+
+params:path {
+  name: Ming Jia
+}

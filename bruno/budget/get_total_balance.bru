@@ -1,0 +1,15 @@
+meta {
+  name: get_total_balance
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/balance/:account
+  body: none
+  auth: inherit
+}
+
+params:path {
+  account: TNG
+}

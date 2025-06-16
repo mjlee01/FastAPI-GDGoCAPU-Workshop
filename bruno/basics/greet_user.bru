@@ -1,0 +1,15 @@
+meta {
+  name: greet_user
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/greet/:name
+  body: none
+  auth: inherit
+}
+
+params:path {
+  name: Ming Jia
+}

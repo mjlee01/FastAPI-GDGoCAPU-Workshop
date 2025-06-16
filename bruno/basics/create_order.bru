@@ -1,0 +1,21 @@
+meta {
+  name: create_order
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/order
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "main": "Chicken Nuggets 6 pcs",
+    "side": "Large Fries",
+    "drink": "Coke",
+    "quantity": 1,
+    "price": 12.50
+  }
+}
